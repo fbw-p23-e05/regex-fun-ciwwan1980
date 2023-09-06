@@ -11,7 +11,5 @@ input_string = "Hello123Whatever6565665"
 pattern = "^[a-zA-Z0-9]+$"
 
 
-if re.match(pattern, input_string):
-    print("The string contains only allowed characters,capital and small letter-number 0-9 .")
-else:
-    print("The string contains other characters.")
+print(re.search(input_string,pattern))# this is wrong way, i shall use pattern in fits place
+print(re.search(pattern, input_string))
