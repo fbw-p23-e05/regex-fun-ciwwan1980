@@ -6,10 +6,14 @@
 import re
 
 
-input_string = "Hello123Whatever6565665"
+input_string = "Hello123Whatever6565665....."
 
 pattern = "^[a-zA-Z0-9]+$"
 
+match= re.search(pattern, input_string)
+print(match)
 
-print(re.search(input_string,pattern))# this is wrong way, i shall use pattern in fits place
-print(re.search(pattern, input_string))
+for char in input_string:
+    if not re.search(pattern, char):
+        print(f"The character '{char}' does not match the pattern.")
+
