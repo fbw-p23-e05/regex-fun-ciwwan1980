@@ -7,7 +7,7 @@ pattern = "[A-Z][a-z]"
 
 # only when all are uppercase, it will not match 
 
-input_string = "ALLUPPERCASe"
+input_string = "ALLUPPERcASe"
 matches = re.search(pattern, input_string)
 print(matches)
 
